@@ -18,4 +18,11 @@ describe('Highest Scores', () => {
 
     expect(result.length).toBe(2);
   })
+
+  it('should use default values if no params passed', () => {
+    const result = highestScore()
+
+    expect(result.length).toBe(4);
+    expect(result).toBeDefined()
+  })
 });

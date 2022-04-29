@@ -1,6 +1,6 @@
 const data = require("./highestScore.json");
 
-// initially the values in case no params are passed
+// initializing the values in case no params are passed
 // first paramter is from file and second is number of returned records
 const highestScore = (file = data, numOfRecords = 4) => {
   let scores = [];
@@ -9,7 +9,6 @@ const highestScore = (file = data, numOfRecords = 4) => {
   });
   scores.sort((a, b) => parseInt(b.score) - parseInt(a.score));
   scores.length = numOfRecords;
-  console.log(scores)
   return scores;
 };
 
