@@ -5,10 +5,11 @@ const data = require("./highestScore.json");
 const highestScore = (file = data, numOfRecords = 4) => {
   let scores = [];
   Object.entries(file).forEach(([key, value]) => {
-    scores.push({ score: parseInt(key), id: value.id });
+    scores.push({ "score": parseInt(key), "id": value.id });
   });
-  scores.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
+  scores.sort((a, b) => parseInt(b.score) - parseInt(a.score));
   scores.length = numOfRecords;
+  console.log(scores)
   return scores;
 };
 

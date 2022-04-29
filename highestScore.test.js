@@ -9,7 +9,13 @@ describe('Highest Scores', () => {
     expect(result[0]).toStrictEqual({
       score: 13214012,
       id: "085a11e1b82b441184f4a193a3c9a13c",
-    });
-
+    })
   })
-})
+
+  it('should return only two records when second paramater is two', () => {
+
+    const result = highestScore(data, 2);
+
+    expect(result.length).toBe(2);
+  })
+});
