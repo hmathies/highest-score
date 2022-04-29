@@ -1,0 +1,16 @@
+{
+  "name": "highest-score",
+  "version": "1.0.0",
+  "description": "javascript function to grab the highest scores in descending order",
+  "main": "index.js",
+  "repository": "https://github.com/hmathies/highest-score.git",
+  "author": "Heather Mathies <hlmathies@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "jest": "^28.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
